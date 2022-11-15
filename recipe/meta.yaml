@@ -27,7 +27,7 @@ requirements:
     - r-remotes
     - r-dissutils
     - r-data.table
-    - r-ecodist
+    - r-emstreer
     - r-fields
     - r-future
     - r-future.apply
@@ -47,12 +47,14 @@ requirements:
     - r-zip
     - r-sf
     - r-rgeos
+    - r-progress
+    - r-progressr
   run:
     - r-base
     - r-remotes
     - r-dissutils
     - r-data.table
-    - r-ecodist
+    - r-emstreer
     - r-fields
     - r-future
     - r-future.apply
@@ -72,7 +74,8 @@ requirements:
     - r-zip
     - r-sf
     - r-rgeos
-
+    - r-progress
+    - r-progressr
 test:
   commands:
     - $R -e "library('biodivMapR')"           # [not win]
