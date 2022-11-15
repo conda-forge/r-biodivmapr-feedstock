@@ -8,7 +8,7 @@ package:
 
 source:
   url:
-    - https://github.com/jbferet/biodivMapR/archive/refs/tags/v1.9.8.tar.gz
+    - https://github.com/jbferet/biodivMapR/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 066d0678e77288e35cb44064da7e0114f8b811446c1adb3b401df48da0ee551e
 
 build:
