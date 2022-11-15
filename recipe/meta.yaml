@@ -9,7 +9,7 @@ package:
 source:
   url:
     - https://github.com/jbferet/biodivMapR/archive/refs/tags/v1.9.8.tar.gz
-  sha256: e06c413a70f868e01dbf742488138cb2f87a190629c59804040fbe1b6b0ae026
+  sha256: 066d0678e77288e35cb44064da7e0114f8b811446c1adb3b401df48da0ee551e
 
 build:
   merge_build_host: True  # [win]
