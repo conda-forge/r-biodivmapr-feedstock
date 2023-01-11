@@ -1,4 +1,4 @@
-{% set version = '1.9.8' %}
+{% set version = "1.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -9,10 +9,10 @@ package:
 source:
   url:
     - https://github.com/jbferet/biodivMapR/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 066d0678e77288e35cb44064da7e0114f8b811446c1adb3b401df48da0ee551e
+  sha256: 71492b793d82a6aa8a18daa0f626abfb97a737d308b26e49fd7c7bbcefbc1b56
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -24,7 +24,7 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-remotes
+    - r-cli
     - r-dissutils
     - r-data.table
     - r-emstreer
@@ -36,22 +36,21 @@ requirements:
     - r-matlab
     - r-matrixStats
     - r-mmand
+    - r-progress
+    - r-progressr
     - r-raster
     - r-rgdal
-    - r-R.utils
+    - r-rgeos
+    - r-sf
     - r-snow
     - r-sp
     - r-stars
     - r-stringr
     - r-vegan
     - r-zip
-    - r-sf
-    - r-rgeos
-    - r-progress
-    - r-progressr
   run:
     - r-base
-    - r-remotes
+    - r-cli
     - r-dissutils
     - r-data.table
     - r-emstreer
@@ -63,30 +62,33 @@ requirements:
     - r-matlab
     - r-matrixStats
     - r-mmand
+    - r-progress
+    - r-progressr
     - r-raster
     - r-rgdal
-    - r-R.utils
+    - r-rgeos
+    - r-sf
     - r-snow
     - r-sp
     - r-stars
     - r-stringr
     - r-vegan
     - r-zip
-    - r-sf
-    - r-rgeos
-    - r-progress
-    - r-progressr
+
 test:
   commands:
     - $R -e "library('biodivMapR')"           # [not win]
     - "\"%R%\" -e \"library('biodivMapR')\""  # [win]
 
 about:
-  home: https://github.com/jbferet/biodivMapR
+  home: https://jbferet.github.io/biodivMapR/
+  dev_url: https://github.com/jbferet/biodivMapR
+  doc_url: https://jbferet.github.io/biodivMapR/reference/index.html
   license: GPL-3.0-only
-  summary: 'An R package for α- and β-diversity mapping using remotely-sensed images'
+  summary: An R package for α- and β-diversity mapping using remotely-sensed images
   license_family: GPL3
   license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
     - LICENSE
 
 extra:
