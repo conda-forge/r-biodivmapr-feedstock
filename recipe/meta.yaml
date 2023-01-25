@@ -1,4 +1,4 @@
-{% set version = "1.10.0" %}
+{% set version = "1.10.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -9,7 +9,7 @@ package:
 source:
   url:
     - https://github.com/jbferet/biodivMapR/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 71492b793d82a6aa8a18daa0f626abfb97a737d308b26e49fd7c7bbcefbc1b56
+  sha256: a5fb03ff73d8f0a2ec1d85b244af71435670f23e97ef4a17a84767dd663a9cd7
 
 build:
   merge_build_host: true  # [win]
@@ -88,7 +88,7 @@ about:
   summary: An R package for α- and β-diversity mapping using remotely-sensed images
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
     - LICENSE
 
 extra:
