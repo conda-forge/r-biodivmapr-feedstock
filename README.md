@@ -1,11 +1,11 @@
-About r-biodivmapr
-==================
+About r-biodivmapr-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biodivmapr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://jbferet.github.io/biodivMapR/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-biodivmapr-feedstock/blob/main/LICENSE.txt)
 
 Summary: An R package for α- and β-diversity mapping using remotely-sensed images
 
