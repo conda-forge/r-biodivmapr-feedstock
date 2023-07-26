@@ -24,10 +24,10 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-ape
     - r-cli
     - r-dissutils
     - r-data.table
-    - r-emstreer
     - r-fields
     - r-future
     - r-future.apply
@@ -36,24 +36,21 @@ requirements:
     - r-matlab
     - r-matrixStats
     - r-mmand
-    - r-progress
     - r-progressr
     - r-raster
     - r-rgdal
-    - r-rgeos
-    - r-sf
     - r-snow
-    - r-sp
     - r-stars
     - r-stringr
+    - r-terra
     - r-vegan
     - r-zip
   run:
     - r-base
+    - r-ape
     - r-cli
     - r-dissutils
     - r-data.table
-    - r-emstreer
     - r-fields
     - r-future
     - r-future.apply
@@ -62,16 +59,13 @@ requirements:
     - r-matlab
     - r-matrixStats
     - r-mmand
-    - r-progress
     - r-progressr
     - r-raster
     - r-rgdal
-    - r-rgeos
-    - r-sf
     - r-snow
-    - r-sp
     - r-stars
     - r-stringr
+    - r-terra
     - r-vegan
     - r-zip
 
