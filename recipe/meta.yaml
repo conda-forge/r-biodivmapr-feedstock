@@ -26,19 +26,23 @@ requirements:
     - r-base
     - r-ape
     - r-cli
-    - r-dissutils
     - r-data.table
+    - r-dissutils
+    - r-dplyr
     - r-fields
     - r-future
     - r-future.apply
+    - r-gdalutilities
     - r-geometry
+    - r-jsonlite
     - r-labdsv
+    - r-magrittr
     - r-matlab
     - r-matrixStats
     - r-mmand
+    - r-progress
     - r-progressr
     - r-raster
-    - r-rgdal
     - r-snow
     - r-stars
     - r-stringr
@@ -49,19 +53,23 @@ requirements:
     - r-base
     - r-ape
     - r-cli
-    - r-dissutils
     - r-data.table
+    - r-dissutils
+    - r-dplyr
     - r-fields
     - r-future
     - r-future.apply
+    - r-gdalutilities
     - r-geometry
+    - r-jsonlite
     - r-labdsv
+    - r-magrittr
     - r-matlab
     - r-matrixStats
     - r-mmand
+    - r-progress
     - r-progressr
     - r-raster
-    - r-rgdal
     - r-snow
     - r-stars
     - r-stringr
