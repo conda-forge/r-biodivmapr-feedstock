@@ -1,4 +1,4 @@
-{% set version = "1.11.0" %}
+{% set version = "1.13.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -9,7 +9,7 @@ package:
 source:
   url:
     - https://github.com/jbferet/biodivMapR/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4d2ee7b75854a60b308773f6939cbe63429cff96f8d480db44b3557bb4c03a4a
+  sha256: 087d248d37a08ed95aa0356c7213b5dc94aacf4eabbb45fc66cbf9de54d41056
 
 build:
   merge_build_host: true  # [win]
